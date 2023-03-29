@@ -4,7 +4,7 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "app-ads.txt": "13243b1f571359387e5ebb63d5ad9fb2",
-"assets/AssetManifest.json": "9b19b6e869bfd61b5371e297bf5d3a7a",
+"assets/AssetManifest.json": "752ff856a35e524b6ff4050f9b735ff5",
 "assets/assets/fonts/MyFlutterApp.ttf": "23e49a368e1241002376866eb96477a0",
 "assets/assets/fonts/TSRotger/ArbFONTS-TSRotger-Bold.otf": "5753f9d45ffc580f01afca5305598aba",
 "assets/assets/fonts/TSRotger/ArbFONTS-TSRotger-Light.otf": "0d3c80ca11594786b98e645269f070d3",
@@ -20,11 +20,16 @@ const RESOURCES = {
 "assets/assets/images/3.png": "e08987a55e06ee326c43f15f2e02239e",
 "assets/assets/images/63205-flutter.json": "ab819bc7ddbca7dcd5f74fffc02e2f53",
 "assets/assets/images/Backcircle.png": "d60ef76ad584d201bbd066913b0a5728",
+"assets/assets/images/google-play-png-logo-3798.png": "fd53fc3ed492c70d4db90920da79f7d3",
+"assets/assets/images/projects/3ilagy.png": "0ba9b183570d8daf940e771f6eeb228b",
 "assets/assets/images/projects/casting.png": "b324bfe230a27e73b1aebabbb42ec95f",
 "assets/assets/images/projects/clinic.png": "b1562c5eda36002a86115384a0c96f7e",
 "assets/assets/images/projects/gym.png": "aa49048ca475b583574318b7f72d7bda",
 "assets/assets/images/projects/hera.png": "16d25f2cf648e3fb92f323dafa535518",
 "assets/assets/images/projects/hiring.png": "75dc8578eeec3312afc2d953ae22a994",
+"assets/assets/images/projects/islamic.png": "7e6be7bc0bf79171341b08f5125370b3",
+"assets/assets/images/projects/portofilio.png": "03cd67a704a6dee86260f7969cb0e11d",
+"assets/assets/images/projects/ramadan.png": "8c4c98723b4ff0d6d740b26c48816bd8",
 "assets/assets/pdf/resume.pdf": "9a42e5af1718e1a01f2ed39908f8290f",
 "assets/FontManifest.json": "42077b154b4fc18507fab4ff6c90ebb0",
 "assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
@@ -40,9 +45,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "ab148c74f8c2c8bdb8d2f02f0a8325d6",
-"/": "ab148c74f8c2c8bdb8d2f02f0a8325d6",
-"main.dart.js": "8af002b14285a4ddb9c5c24b017dc65c",
+"index.html": "68f27e060d5864f36d367b2ab389a117",
+"/": "68f27e060d5864f36d367b2ab389a117",
+"main.dart.js": "8720e25311df718f865caea179790fd0",
 "manifest.json": "f70471aa1b4f2795c55722eec256656c",
 "version.json": "ad25b42602afd1220387101bb6fd6852"
 };
