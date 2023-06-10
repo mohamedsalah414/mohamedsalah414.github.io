@@ -4,7 +4,7 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "app-ads.txt": "13243b1f571359387e5ebb63d5ad9fb2",
-"assets/AssetManifest.json": "752ff856a35e524b6ff4050f9b735ff5",
+"assets/AssetManifest.json": "d6915dd95cb31c14b54cfdad0aa2c307",
 "assets/assets/fonts/MyFlutterApp.ttf": "4412d1dae0b38881fd342cb3721c617f",
 "assets/assets/fonts/TSRotger/ArbFONTS-TSRotger-Bold.otf": "5753f9d45ffc580f01afca5305598aba",
 "assets/assets/fonts/TSRotger/ArbFONTS-TSRotger-Light.otf": "0d3c80ca11594786b98e645269f070d3",
@@ -30,10 +30,11 @@ const RESOURCES = {
 "assets/assets/images/projects/islamic.png": "7e6be7bc0bf79171341b08f5125370b3",
 "assets/assets/images/projects/portofilio.png": "03cd67a704a6dee86260f7969cb0e11d",
 "assets/assets/images/projects/ramadan.png": "8c4c98723b4ff0d6d740b26c48816bd8",
+"assets/assets/pdf/cv.pdf": "71ea760bcd76264f73a7d91c33c421eb",
 "assets/assets/pdf/resume.pdf": "9a42e5af1718e1a01f2ed39908f8290f",
 "assets/FontManifest.json": "42077b154b4fc18507fab4ff6c90ebb0",
 "assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
-"assets/NOTICES": "5dd0cb69e23ddd5996d6ecbeacdd897a",
+"assets/NOTICES": "4c406ed5ab9c8a58199c13f610772f23",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "canvaskit/canvaskit.js": "97937cb4c2c2073c968525a3e08c86a3",
 "canvaskit/canvaskit.wasm": "3de12d898ec208a5f31362cc00f09b9e",
@@ -45,9 +46,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "60f66e89fedc6f14ad50041ed232ef2a",
-"/": "60f66e89fedc6f14ad50041ed232ef2a",
-"main.dart.js": "0527dd3c361ee9666816f0370f81f691",
+"index.html": "db208a3acdbb22d68eb57b5a2d0dbab9",
+"/": "db208a3acdbb22d68eb57b5a2d0dbab9",
+"main.dart.js": "f3ecd1d9fbf5622ada6706f836490a1e",
 "manifest.json": "f70471aa1b4f2795c55722eec256656c",
 "version.json": "23b0d289ea635934f91c5277fa2faaff"
 };
