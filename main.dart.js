@@ -77488,7 +77488,7 @@ A.aad.prototype={
 $1(a){return A.tr(B.mx,a.a,B.a1,!1)+"="+A.tr(B.mx,a.b,B.a1,!1)},
 $S:475}
 A.aac.prototype={
-$0(){this.a.vf("00201017584607")},
+$0(){this.a.vf("+201017584607")},
 $S:0}
 A.aab.prototype={
 $0(){this.a.vM("mohamed_salah_414@yahoo.com","I want to contact you")},
@@ -77586,7 +77586,7 @@ case 2:if(!c)throw A.h("Could not launch "+a)
 return A.Q(null,r)}})
 return A.R($async$vb,r)},
 J(a){var s=this,r=null,q=A.aW(a,r,t.w).w.a.a/50
-return A.xL(A.b([s.qX(B.CU,"https://github.com/mohamedsalah414"),A.bu(r,r,q),s.qX(B.CV,"https://dribbble.com/mohamedsalah414"),A.bu(r,r,q),s.qX(B.CW,"https://www.linkedin.com/in/mohamedsalah414/"),A.bu(r,r,q),s.qX(B.CX,"https://play.google.com/store/apps/developer?id=mohamedsalah414"),A.bu(r,r,q),s.qX(B.CT,"https://wa.me/00201017584607")],t.p),B.al,B.bp,B.aB)},
+return A.xL(A.b([s.qX(B.CU,"https://github.com/mohamedsalah414"),A.bu(r,r,q),s.qX(B.CV,"https://dribbble.com/mohamedsalah414"),A.bu(r,r,q),s.qX(B.CW,"https://www.linkedin.com/in/mohamedsalah414/"),A.bu(r,r,q),s.qX(B.CX,"https://play.google.com/store/apps/developer?id=mohamedsalah414"),A.bu(r,r,q),s.qX(B.CT,"https://wa.me/+201017584607")],t.p),B.al,B.bp,B.aB)},
 qX(a,b){var s=null
 return A.aig(s,B.aO,B.aO,A.aif(a,B.cc,s,this.c===4?35:25),new A.Va(this,b),B.aO,s,s)}}
 A.Va.prototype={
