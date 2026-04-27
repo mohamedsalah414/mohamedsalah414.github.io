@@ -1,12 +1,12 @@
 {
-    "name": "mosalah",
-    "short_name": "mosalah",
+    "name": "Mohamed Salah — Senior Mobile Developer",
+    "short_name": "Mo Salah",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#hexcode",
-    "theme_color": "#hexcode",
-    "description": "A new Flutter project.",
-    "orientation": "portrait-primary",
+    "background_color": "#0F172A",
+    "theme_color": "#38BDF8",
+    "description": "Senior Mobile Developer — Mobile & Web portfolio. 16+ apps shipped on Google Play and App Store.",
+    "orientation": "any",
     "prefer_related_applications": false,
     "icons": [
         {
