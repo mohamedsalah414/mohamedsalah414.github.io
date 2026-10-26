@@ -1,11 +1,11 @@
 {
-    "name": "Mohamed Salah — Senior Mobile Developer",
+    "name": "Mohamed Salah, Senior Software Engineer",
     "short_name": "Mo Salah",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0F172A",
-    "theme_color": "#38BDF8",
-    "description": "Senior Mobile Developer — Mobile & Web portfolio. 16+ apps shipped on Google Play and App Store.",
+    "background_color": "#0F2744",
+    "theme_color": "#0F2744",
+    "description": "Mohamed Salah designs, builds and ships mobile products with Flutter.",
     "orientation": "any",
     "prefer_related_applications": false,
     "icons": [

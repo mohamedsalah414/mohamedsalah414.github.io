@@ -1,159 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-    For more details: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
+  <!-- Replaced by `flutter build web --base-href`. The site is served from the
+       domain root, so CI builds with the default "/". -->
   <base href="/">
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- SEO -->
-  <meta name="description" content="Mohamed Salah — Senior Mobile Developer specializing in mobile & web applications. 4+ years, 16+ apps shipped on Google Play and App Store.">
-  <meta name="keywords" content="Senior Mobile Developer, SwiftUI, Flutter, Dart, Android, iOS, Web App, Portfolio">
+  <title>Mohamed Salah, Senior Software Engineer</title>
+  <meta name="description" content="Mohamed Salah is a senior software engineer in Alexandria, Egypt who designs, builds and ships Flutter apps for fintech, health, education, ERP and field operations. Open to remote work and relocation.">
   <meta name="author" content="Mohamed Salah">
   <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mohamedsalah414.github.io/">
 
-  <!-- Open Graph / Social preview -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Mohamed Salah — Senior Mobile Developer">
-  <meta property="og:description" content="Senior Mobile Developer. 16+ apps shipped. Available for opportunities.">
-  <meta property="og:image" content="icons/Icon-512.png">
-
-  <!-- Twitter card -->
+  <!-- Social previews -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://mohamedsalah414.github.io/">
+  <meta property="og:title" content="Mohamed Salah, Senior Software Engineer">
+  <meta property="og:description" content="I design, build and ship mobile products, from the first screen to the store listing and every release after.">
+  <meta property="og:image" content="https://mohamedsalah414.github.io/icons/Icon-512.png">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Mohamed Salah — Senior Mobile Developer">
-  <meta name="twitter:description" content="Senior Mobile Developer. 16+ apps shipped.">
+  <meta name="twitter:title" content="Mohamed Salah, Senior Software Engineer">
+  <meta name="twitter:description" content="I design, build and ship mobile products, from the first screen to the store listing and every release after.">
+  <meta name="twitter:image" content="https://mohamedsalah414.github.io/icons/Icon-512.png">
 
-  <!-- iOS PWA -->
+  <meta name="theme-color" content="#0F2744" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F3F5F7" media="(prefers-color-scheme: light)">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Mo Salah">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png">
-
-  <!-- PWA manifest -->
   <link rel="manifest" href="manifest.json">
 
-  <title>Mohamed Salah — Senior Mobile Developer</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mohamed Salah",
+    "alternateName": "محمد صلاح",
+    "jobTitle": "Senior Software Engineer",
+    "url": "https://mohamedsalah414.github.io/",
+    "worksFor": {"@type": "Organization", "name": "Flojics Technology", "url": "https://flojics.com/"},
+    "alumniOf": {"@type": "CollegeOrUniversity", "name": "Alexandria University"},
+    "address": {"@type": "PostalAddress", "addressLocality": "Alexandria", "addressCountry": "EG"},
+    "knowsAbout": ["Flutter", "Dart", "Mobile app development", "Clean Architecture", "BLoC", "Riverpod", "Firebase", "CI/CD"],
+    "sameAs": [
+      "https://github.com/mohamedsalah414",
+      "https://www.linkedin.com/in/mohamedsalah414/",
+      "https://dribbble.com/mohamedsalah414"
+    ]
+  }
+  </script>
 
   <style>
-    /* Prevent flash of white before Flutter loads */
-    html, body {
-      margin: 0;
-      padding: 0;
-      background-color: #0F172A;
-      height: 100%;
+    :root { color-scheme: light dark; --paper: #F3F5F7; --ink: #102A47; --line: #8FA6C1; }
+    @media (prefers-color-scheme: dark) {
+      :root { --paper: #0F2744; --ink: #EAF1F8; --line: #6F93BD; }
     }
+    html, body { margin: 0; padding: 0; height: 100%; background: var(--paper); }
 
-    /* Loading indicator shown while Flutter initializes */
-    #flutter-loading {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      gap: 20px;
-      font-family: system-ui, -apple-system, sans-serif;
+    /* Shown until Flutter paints its first frame. */
+    #loading {
+      position: fixed; inset: 0;
+      display: flex; align-items: center; justify-content: center;
     }
-
-    #flutter-loading .brand {
-      font-size: 32px;
-      font-weight: 900;
-      letter-spacing: 3px;
-      background: linear-gradient(135deg, #38BDF8, #60A5FA);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+    #loading .mark {
+      width: 56px; height: 56px; box-sizing: border-box;
+      border: 2px solid var(--ink); color: var(--ink);
+      display: flex; align-items: center; justify-content: center;
+      font: 800 18px/1 system-ui, -apple-system, sans-serif; letter-spacing: 1px;
+      animation: pulse 1.2s ease-in-out infinite;
     }
+    @keyframes pulse { 50% { border-color: var(--line); } }
+    @media (prefers-reduced-motion: reduce) { #loading .mark { animation: none; } }
 
-    #flutter-loading .spinner {
-      width: 36px;
-      height: 36px;
-      border: 3px solid rgba(56, 189, 248, 0.15);
-      border-top-color: #38BDF8;
-      border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-    }
-
-    /* SEO / ATS hidden text */
+    /* Text mirror of the page for crawlers and no-JS readers. */
     .visually-hidden {
-      position: absolute !important;
-      width: 1px !important;
-      height: 1px !important;
-      padding: 0 !important;
-      margin: -1px !important;
-      overflow: hidden !important;
-      clip: rect(0, 0, 0, 0) !important;
-      white-space: nowrap !important;
-      border: 0 !important;
-    }
-
-    @keyframes spin {
-      to { transform: rotate(360deg); }
+      position: absolute !important; width: 1px !important; height: 1px !important;
+      padding: 0 !important; margin: -1px !important; overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important;
     }
   </style>
 </head>
 <body>
+  <div id="loading" role="progressbar" aria-label="Loading"><div class="mark">MS</div></div>
 
-  <!-- Shown while Flutter engine boots -->
-  <div id="flutter-loading">
-    <div class="brand">MS.</div>
-    <div class="spinner"></div>
-  </div>
-
-  <!-- Semantic HTML for ATS systems and Google SEO Web Crawlers -->
   <div class="visually-hidden">
-    <h1>Mohamed Salah - Senior Mobile Developer</h1>
-    <h2>Summary</h2>
-    <p>I am a Senior Mobile App Developer with over 4 years of proven expertise in crafting high-performance, pixel-perfect, and scalable mobile applications. Having successfully engineered and shipped 18+ production-ready apps across Google Play and the App Store, I specialize in translating complex business requirements into elegant, robust, and user-centric digital experiences. My core strengths lie in clean architecture, advanced state management, native integrations (SwiftUI), and leveraging AI tooling (Claude Code, Gemini, Copilot) to accelerate delivery and maintain clean, scalable codebases.</p>
-    <h2>Skills</h2>
+    <h1>Mohamed Salah, Senior Software Engineer</h1>
+    <p>I design, build and ship mobile products, from the first screen to the store listing and every release after. Flutter since 2021. Apps live on Google Play and the App Store. Based in Alexandria, Egypt, open to remote work and relocation.</p>
+    <h2>Selected work</h2>
     <ul>
-      <li>Dart & Flutter (Mobile/Web)</li>
-      <li>SwiftUI & Native iOS</li>
-      <li>Clean & Modular Architecture</li>
-      <li>BLoC, Riverpod & Provider</li>
-      <li>Odoo ERP (JSON-RPC)</li>
-      <li>Branch.io & Deep Linking</li>
-      <li>Claude Code & Gemini</li>
-      <li>GitHub Copilot</li>
-      <li>AI-Assisted Development</li>
-      <li>REST APIs & WebSockets</li>
-      <li>Firebase Suite</li>
-      <li>Stripe & In-App Purchases</li>
-      <li>SQLite & Hive</li>
-      <li>Secure Storage & App Security</li>
-      <li>CI/CD Pipelines</li>
-      <li>Git & Agile Workflows</li>
-      <li>Unit & Widget Testing</li>
-      <li>Performance Optimization</li>
-      <li>Real-time Systems</li>
+      <li>Zidly: QR-code tipping fintech for Kuwait and Saudi Arabia. Built end to end: scan-to-tip, card, Apple Pay and Google Pay, identity verification, 12 languages.</li>
+      <li>Toheal: anonymous mental-health peer support. #4 in Health &amp; Fitness on the App Store, 50K+ downloads, rated 4.6.</li>
+      <li>ButlerFM: facility-management field app with geofenced shifts, QR scanning and offline caching.</li>
+      <li>Inck: tutoring marketplace with booking, Stripe payments and real-time chat.</li>
+      <li>FLOSales: field and van sales on Odoo ERP.</li>
+      <li>Cofo Club: fitness app with subscriptions, coach chat and nutrition plans.</li>
+      <li>eApprovals: product approvals for IMG Licensing.</li>
+      <li>Cashkool: Arabic-first expense tracker for Egypt. Type what you spent in Egyptian Arabic; offline, with encrypted backups.</li>
+      <li>Maktb Day: offline bill splitter that shows who pays whom, with QR ordering between friends.</li>
     </ul>
+    <h2>Experience</h2>
+    <ul>
+      <li>Senior Flutter Developer, Flojics Technology, June 2023 to now.</li>
+      <li>Flutter Developer, Rare Crew (Bratislava, remote), November 2022 to March 2023.</li>
+      <li>Flutter Developer, Coappso, March 2022 to November 2022.</li>
+      <li>Freelance mobile developer, February 2021 to March 2022.</li>
+      <li>BSc Computer Science, Alexandria University, 2016 to 2021.</li>
+    </ul>
+    <h2>Contact</h2>
+    <p><a href="https://www.linkedin.com/in/mohamedsalah414/">LinkedIn</a>, <a href="https://github.com/mohamedsalah414">GitHub</a>, <a href="MohamedSalah_Resume.pdf">Résumé (PDF)</a></p>
   </div>
 
   <script>
-    // Hide the loading screen once Flutter is ready
     window.addEventListener('flutter-first-frame', function () {
-      var loader = document.getElementById('flutter-loading');
-      if (loader) {
-        loader.style.transition = 'opacity 0.4s ease';
-        loader.style.opacity = '0';
-        setTimeout(function () { loader.remove(); }, 400);
-      }
+      var el = document.getElementById('loading');
+      if (el) el.remove();
     });
   </script>
-
-  <!-- Modern Flutter bootstrap (replaces deprecated service worker pattern) -->
   <script src="flutter_bootstrap.js" async></script>
-
 </body>
 </html>
